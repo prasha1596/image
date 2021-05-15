@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CatalogClient",
+  "description": "A Client from Image catalog",
+  "type": "object"
+}

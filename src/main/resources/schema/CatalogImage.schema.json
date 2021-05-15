@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CatalogImage",
+  "description": "A image from Image catalog",
+  "type": "object",
+  "properties": {
+    "image-id": {
+    "description": "The unique identifier for an image.",
+    "type": "string"
+    },
+    "image-format": {
+      "description": "Format of image (gif, png, jpeg, etc.).",
+      "type": "string"
+    },
+    "image-path": {
+      "description": "Path/URL to the image data.",
+      "type": "string"
+    },
+    "meta-data": {
+      "description": "Metadata item describing resource.",
+      "type": "array",
+       "items": {
+         "type": "object",
+         "title": "CatalogMetaDatum",
+         "description": "The meta data object comprising the array.",
+         "properties": {
+           "name": {
+             "type": "string",
+             "description": "Meta data element property name."
+           },
+           "value": {
+             "type": "string",
+             "description": "Meta data element property value."
+           }
+         }
+       }
+     }
+   }
+}
